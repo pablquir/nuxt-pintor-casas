@@ -1,0 +1,71 @@
+{
+  "sectionPresentation": {
+    "img": {
+      "urlSm": "/about/pintor-rodillo-640w.webp",
+      "urlXl": "/about/pintor-rodillo-1131w.webp",
+      "attrAlt": "image de pintor rodillo rojo"
+    },
+    "title": "Acerca de Nosotros",
+    "subTitle": "Somos un grupo de pintores profesionales dispuestos a dar el mejor servicio y calidad",
+    "content": [
+      "Somos una pequeña empresa dedicada al pintado de casas, paredes exteriores e interiores.",
+      " Nos enorgullece ofrecer servicios de alta calidad para embellecer y proteger su hogar.",
+      " Nuestro equipo de expertos en pintura tiene años de experiencia en el campo y está comprometido en hacer que su experiencia de pintura sea lo más fácil y sin problemas posible. Además, nuestra empresa está comprometida con el uso de productos de alta calidad y amigables con el medio ambiente para garantizar la satisfacción de nuestros clientes y el cuidado del medio ambiente.",
+      "¡Gracias por visitarnos!"
+    ]
+  },
+  "sectionPurpose": [
+    {
+      "icon": "bullseye-solid",
+      "title": "Misión",
+      "content": [
+        "nuestra misión es brindar servicios de pintado de alta calidad y durabilidad para mejorar la estética y protección de las casas y edificios, logrando la satisfacción total de nuestros clientes a través de un servicio personalizado, confiable y eficiente."
+      ]
+    },
+    {
+      "icon": "eye-solid",
+      "title": "Visión",
+      "content": [
+        "Ser reconocidos como la empresa líder en el mercado de pintura de casas, ofreciendo servicios de alta calidad a precios competitivos, innovando constantemente en técnicas y materiales, y expandiendo nuestra presencia en todo el territorio nacional."
+      ]
+    },
+    {
+      "icon": "gem-regular",
+      "title": "Valores",
+      "content": [
+        "Calidad: Nos comprometemos a ofrecer a nuestros clientes la mejor calidad en materiales, técnicas y mano de obra, asegurando que el trabajo realizado sea duradero y satisfactorio.",
+        "Responsabilidad: Nos enfocamos en cumplir con los compromisos adquiridos con nuestros clientes, trabajando con profesionalismo, puntualidad y honestidad en cada proyecto.",
+        "Trabajo en equipo: Fomentamos la colaboración y el trabajo en equipo para alcanzar los objetivos de la empresa y brindar un servicio óptimo a nuestros clientes.",
+        "Innovación: Nos mantenemos actualizados en técnicas y materiales de pintura para ofrecer servicios innovadores y de alta calidad.",
+        "Compromiso social: Somos una empresa comprometida con el medio ambiente y la comunidad, por lo que utilizamos materiales de pintura ecológicos y apoyamos iniciativas sociales en nuestras comunidades locales."
+      ]
+    }
+  ],
+  "sectionPrincipies": [
+    {
+      "icon": "bullseye-solid",
+      "title": "Misión",
+      "content": [
+        "nuestra misión es brindar servicios de pintado de alta calidad y durabilidad para mejorar la estética y protección de las casas y edificios, logrando la satisfacción total de nuestros clientes a través de un servicio personalizado, confiable y eficiente."
+      ]
+    },
+    {
+      "icon": "eye-solid",
+      "title": "Visión",
+      "content": [
+        "Ser reconocidos como la empresa líder en el mercado de pintura de casas, ofreciendo servicios de alta calidad a precios competitivos, innovando constantemente en técnicas y materiales, y expandiendo nuestra presencia en todo el territorio nacional."
+      ]
+    },
+    {
+      "icon": "gem-regular",
+      "title": "Valores",
+      "content": [
+        "Calidad: Nos comprometemos a ofrecer a nuestros clientes la mejor calidad en materiales, técnicas y mano de obra, asegurando que el trabajo realizado sea duradero y satisfactorio.",
+        "Responsabilidad: Nos enfocamos en cumplir con los compromisos adquiridos con nuestros clientes, trabajando con profesionalismo, puntualidad y honestidad en cada proyecto.",
+        "Trabajo en equipo: Fomentamos la colaboración y el trabajo en equipo para alcanzar los objetivos de la empresa y brindar un servicio óptimo a nuestros clientes.",
+        "Innovación: Nos mantenemos actualizados en técnicas y materiales de pintura para ofrecer servicios innovadores y de alta calidad.",
+        "Compromiso social: Somos una empresa comprometida con el medio ambiente y la comunidad, por lo que utilizamos materiales de pintura ecológicos y apoyamos iniciativas sociales en nuestras comunidades locales."
+      ]
+    }
+  ]
+}

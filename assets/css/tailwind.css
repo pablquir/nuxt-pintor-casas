@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-layout { @apply bg-slate-200 dark:bg-slate-900; }
+  .bg-card { @apply bg-slate-100 dark:bg-slate-800 }
+
+  .text-color-default {
+    @apply text-slate-900 dark:text-slate-100;
+  }
+
+  .text-default {
+    @apply text-slate-900 dark:text-slate-100 text-lg;
+  }
+
+  .fill-default {
+    @apply fill-slate-900 dark:fill-slate-100;
+  }
+
+  .btn {
+    @apply active:scale-90 rounded-lg;
+    @apply text-center text-default;
+    @apply transition-all;
+  }
+
+  .btn-active {
+    @apply bg-red-500 hover:bg-red-400;
+    @apply font-bold text-slate-100;
+  }
+
+  .card { @apply p-8 rounded-xl bg-card; }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+.div-mask {
+  -webkit-mask-image: url("/img/home/paht33.svg");
+  mask-image: url("/img/home/path33.svg");
+  mask-repeat: repeat-x, no-repeat;
+  mask-size: fill-box;
+}

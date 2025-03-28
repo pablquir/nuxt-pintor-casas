@@ -1,0 +1,253 @@
+{
+  "sectionPresentation": {
+    "id": "presentationService",
+    "title": "Servicios",
+    "content": [
+      "Somos una microempresa especializada en pintura de casas, barandas y rejas, ubicada en Santa Cruz de la Sierra. En esta sección, le ofrecemos una descripción detallada de nuestros servicios de pintura para que pueda encontrar lo que mejor se adapte a sus necesidades.",
+      "Nuestros servicios están diseñados para satisfacer todas las necesidades de pintura de nuestros clientes. Ya sea que esté buscando pintar su hogar por dentro o por fuera, o si necesita pintar las barandas y rejas de su propiedad, nuestros profesionales altamente capacitados y experimentados pueden hacer el trabajo por usted. Nos aseguramos de utilizar solo los mejores materiales de pintura y herramientas de alta calidad para garantizar que su proyecto sea realizado con la máxima calidad y durabilidad. En Alcides & Asociados, estamos comprometidos en ofrecer un servicio excepcional y una atención personalizada para que nuestros clientes estén completamente satisfechos con nuestro trabajo. ¡Siga leyendo para conocer más acerca de nuestros servicios de pintura!"
+    ],
+    "img": {
+      "urlSm": "/img/about/pintor-rodillo-640w.webp",
+      "urlXl": "/img/about/pintor-rodillo-1131w.webp",
+      "attrAlt": "imagen de pintor, rodillo rojo"
+    }
+  },
+  "services": [
+    {
+      "id": "id-exterior",
+      "name": "Exterior",
+      "icon": "paint-roller-solid",
+      "title": "Pintado exterior de una casa",
+      "description": "¿Busca darle una nueva vida a la fachada de su hogar? Contamos con un equipo de expertos en pintura de exteriores que pueden transformar su hogar en un abrir y cerrar de ojos. Desde la preparación de la superficie hasta la elección de los mejores productos de pintura, nos aseguramos de que cada detalle sea cuidado para ofrecerle una pintura de alta calidad que resista el paso del tiempo.",
+      "img": [
+        {
+          "id": 1,
+          "urlImg1920": "/img/services/fachada1-1920w.webp",
+          "alt": "Fachada de una casa estilo chalet dos pisos, pintado de exterior con color solido gris y blanco",
+          "caption": "Fachada color gris y blanco"
+        },
+        {
+          "id": 2,
+          "urlImg1920": "/img/services/fachada2-1920w.webp",
+          "alt": "Fachada de una casa estilo chalet dos pisos,pintado de exterior con colores solidos gris priedra y blanco, patio con pasto verde",
+          "caption": "Fachada color gris piedra y blanco"
+        },
+        {
+          "id": 3,
+          "urlImg1920": "/img/services/fachada3-1920w.webp",
+          "alt": "Fachada de una casa estilo chalet dos pisos, pintado de exterior con colores solidos azul con blanco",
+          "caption": "Fachada color indigo y blanco"
+        }
+      ],
+      "details": [
+        {
+          "title": "Especificaciones",
+          "icon": "list-check-solid",
+          "img": "/img/services/especificaciones.png",
+          "paragraphs": [
+            "Utilizamos pintura de alta calidad para exteriores que es resistente a la intemperie y a la decoloración.",
+            "Ofrecemos una amplia gama de colores para que nuestros clientes puedan elegir el que mejor se adapte a sus necesidades.",
+            "Realizamos una inspección detallada del estado de la superficie a pintar antes de iniciar el trabajo para garantizar que esté limpia, libre de moho y grietas."
+          ]
+        },
+        {
+          "title": "Cuidados",
+          "icon": "triangle-exclamation-solid",
+          "img": "/img/services/advertencias.png",
+          "paragraphs": [
+            "Evite el uso de limpiadores abrasivos o cepillos de cerdas duras para evitar dañar la pintura.",
+            "Asegúrese de mantener las áreas pintadas limpias y libres de escombros y suciedad.",
+            "Inspeccione periódicamente las áreas pintadas para detectar cualquier grieta o desgaste."
+          ]
+        },
+        {
+          "title": "Procedimientos",
+          "icon": "screwdriver-wrench-solid",
+          "img": "img/services/procedimientos.png",
+          "paragraphs": [
+            "Preparación: cubrimos todas las áreas y objetos cercanos para evitar manchas accidentales. También lavamos la superficie a pintar y aplicamos sellador si es necesario.",
+            "Pintura: aplicamos una capa de imprimación y luego la pintura exterior utilizando técnicas de pintura adecuadas para garantizar una cobertura uniforme.",
+            "Acabado: revisamos el trabajo para asegurarnos de que no hayan áreas sin pintar y para realizar cualquier retoque necesario."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id-interior",
+      "name": "Interior",
+      "icon": "brush-solid",
+      "title": "Pintado interior de una casa",
+      "description": "¿Necesita darle una nueva apariencia a su hogar por dentro? Contamos con un equipo de expertos en pintura de interiores que pueden ayudarle a transformar cualquier habitación en su hogar. Desde el cambio de color hasta la reparación de las imperfecciones en las paredes, nos aseguramos de que cada detalle sea atendido para brindarle una experiencia de pintura sin problemas.",
+      "img": [
+        {
+          "id": 1,
+          "urlImg1920": "/img/services/interior1-1920w.webp",
+          "alt": "interior de una habitación, paredes color solido blancas, piso de azulejos cuadrados color crema",
+          "caption": "Interior de habitación color blanco"
+        },
+        {
+          "id": 2,
+          "urlImg1920": "/img/services/interior2-1920w.webp",
+          "alt": "interior de una sala, paredes color solido gris piedra, color solido arena y color solid blanco, azulejos color piedra oscuro",
+          "caption": "Sala colo gris con color arena"
+        },
+        {
+          "id": 3,
+          "urlImg1920": "/img/services/interior3-1920w.webp",
+          "alt": "interior de una habitación, pared de color azul cielo, piso de azulejos rectangulares color blanco",
+          "caption": "Interior de habitación color azul cielo"
+        }
+      ],
+      "details": [
+        {
+          "title": "Especificaciones",
+          "icon": "list-check-solid",
+          "img": "/img/services/especificaciones-interior.png",
+          "paragraphs": [
+            "Utilizamos pintura de alta calidad para interiores que es resistente al desgaste y fácil de limpiar.",
+            "Ofrecemos una amplia gama de colores para que nuestros clientes puedan elegir el que mejor se adapte a sus necesidades.",
+            "Realizamos una inspección detallada del estado de la superficie a pintar antes de iniciar el trabajo para garantizar que esté limpia, libre de grietas y agujeros."
+          ]
+        },
+        {
+          "title": "Cuidados",
+          "icon": "triangle-exclamation-solid",
+          "img": "/img/services/advertencias.png",
+          "paragraphs": [
+            "Evite el uso de limpiadores abrasivos o cepillos de cerdas duras para evitar dañar la pintura.",
+            "Asegúrese de mantener las áreas pintadas limpias y libres de escombros y suciedad.",
+            "Evite el uso de cintas adhesivas de baja calidad que puedan dañar la pintura al ser removidas."
+          ]
+        },
+        {
+          "title": "Procedimientos",
+          "icon": "screwdriver-wrench-solid",
+          "img": "/img/services/procedimientos-interior.png",
+          "paragraphs": [
+            "Preparación: cubrimos todas las áreas y objetos cercanos para evitar manchas accidentales. También llenamos cualquier grieta o agujero y lijamos la superficie a pintar para que esté suave.",
+            "Pintura: aplicamos una capa de imprimación y luego la pintura interior utilizando técnicas de pintura adecuadas para garantizar una cobertura uniforme.",
+            "Acabado: revisamos el trabajo para asegurarnos de que no hayan áreas sin pintar y para realizar cualquier retoque necesario."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id-reja",
+      "name": "Rejas",
+      "icon": "reja-solid",
+      "title": "Pintado de rejas",
+      "description": "Las rejas pueden agregar un toque de seguridad y estilo a su hogar, pero si están en mal estado pueden ser un verdadero ojo de dolor. Ofrecemos servicios de pintura para rejas para que se vean impecables y puedan resistir el paso del tiempo. Utilizamos los mejores productos de pintura para garantizar una larga durabilidad y protección contra los elementos.",
+      "img": [
+        {
+          "id": 1,
+          "urlImg1920": "/img/services/reja1-1920w.webp",
+          "alt": "Reja color negro sin brillo, entrada principal de la casa",
+          "caption": "Reja color negro sin brillo con figuras color plateado"
+        },
+        {
+          "id": 2,
+          "urlImg1920": "/img/services/reja2-1920w.webp",
+          "alt": "Portón metálico color negro sin brillo entrada principal de la casa",
+          "caption": "Portón con color negro sin brillo"
+        },
+        {
+          "id": 3,
+          "urlImg1920": "/img/services/reja3-1920w.webp",
+          "alt": "Portón metálico color plomo, rojo y blanco entrada principila de la casa",
+          "caption": "Portón metálico color plomo, rojo y blanco"
+        }
+      ],
+      "details": [
+        {
+          "title": "Especificaciones",
+          "icon": "list-check-solid",
+          "img": "/img/services/especificaciones-reja.png",
+          "paragraphs": [
+            "Utilizamos pintura de alta calidad que es resistente a la intemperie y a la decoloración.",
+            "Ofrecemos una amplia gama de colores para que nuestros clientes puedan elegir el que mejor se adapte a sus necesidades.",
+            "Realizamos una inspección detallada del estado de la superficie a pintar antes de iniciar el trabajo para garantizar que esté limpia y libre de óxido."
+          ]
+        },
+        {
+          "title": "Cuidados",
+          "icon": "triangle-exclamation-solid",
+          "img": "/img/services/advertencias.png",
+          "paragraphs": [
+            "Evite el uso de limpiadores abrasivos o cepillos de cerdas duras para evitar dañar la pintura.",
+            "Inspeccione periódicamente la reja para detectar cualquier signo de oxidación y repinte cuando sea necesario.",
+            "Asegúrese de mantener la reja limpia y libre de suciedad y escombros."
+          ]
+        },
+        {
+          "title": "Procedimientos",
+          "icon": "screwdriver-wrench-solid",
+          "img": "/img/services/procedimientos-reja.png",
+          "paragraphs": [
+            "Preparación: cubrimos todas las áreas cercanas para evitar manchas accidentales. También limpiamos y lijamos la superficie de la reja para eliminar cualquier óxido o irregularidad.",
+            "Pintura: aplicamos una capa de imprimación y luego la pintura utilizando técnicas de pintura adecuadas para garantizar una cobertura uniforme.",
+            "Acabado: revisamos el trabajo para asegurarnos de que no hayan áreas sin pintar y para realizar cualquier retoque necesario."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id-baranda",
+      "name": "Barandas",
+      "icon": "stairs-solid",
+      "title": "Pintado de barandas",
+      "description": "Las barandas son una parte importante de su hogar que no deben ser descuidadas. Ofrecemos servicios de pintura para barandas para que luzcan como nuevas y resistan el paso del tiempo. Utilizamos los mejores productos de pintura para garantizar una larga durabilidad y protección contra los elementos.",
+      "img": [
+        {
+          "id": 1,
+          "urlImg1920": "/img/services/baranda1-1920w.webp",
+          "alt": "Baranda metálica de una escalera curva en el interior de una casa",
+          "caption": "Baranda metálica color negro sin brillo"
+        },
+        {
+          "id": 2,
+          "urlImg1920": "/img/services/baranda2-1920w.webp",
+          "alt": "Baranda metálica color azul en la planta alta que da a un balcon",
+          "caption": "Baranda metálica color azul"
+        },
+        {
+          "id": 3,
+          "urlImg1920": "/img/services/baranda3-1920w.webp",
+          "alt": "Baranda metálica color blanco con figuras en el centro en forma de letra s ubicada en el balcon planta alta",
+          "caption": "Baranda metálica color blanco con figuras"
+        }
+      ],
+      "details": [
+        {
+          "title": "Especificaciones",
+          "icon": "list-check-solid",
+          "img": "/img/services/especificaciones-baranda.png",
+          "paragraphs": [
+            "Utilizamos pintura de alta calidad que es resistente a la intemperie y a la decoloración.",
+            "Ofrecemos una amplia gama de colores para que nuestros clientes puedan elegir el que mejor se adapte a sus necesidades.",
+            "Realizamos una inspección detallada del estado de la superficie a pintar antes de iniciar el trabajo para garantizar que esté limpia y libre de óxido."
+          ]
+        },
+        {
+          "title": "Cuidados",
+          "icon": "triangle-exclamation-solid",
+          "img": "/img/services/advertencias.png",
+          "paragraphs": [
+            "Evite el uso de limpiadores abrasivos o cepillos de cerdas duras para evitar dañar la pintura.",
+            "Inspeccione periódicamente la baranda para detectar cualquier signo de oxidación y repinte cuando sea necesario.",
+            "Asegúrese de mantener la baranda limpia y libre de suciedad y escombros."
+          ]
+        },
+        {
+          "title": "Procedimientos",
+          "icon": "screwdriver-wrench-solid",
+          "img": "/img/services/procedimientos-baranda.png",
+          "paragraphs": [
+            "Preparación: cubrimos todas las áreas cercanas para evitar manchas accidentales. También limpiamos y lijamos la superficie de la baranda para eliminar cualquier óxido o irregularidad.",
+            "Pintura: aplicamos una capa de imprimación y luego la pintura utilizando técnicas de pintura adecuadas para garantizar una cobertura uniforme.",
+            "Acabado: revisamos el trabajo para asegurarnos de que no hayan áreas sin pintar y para realizar cualquier retoque necesario."
+          ]
+        }
+      ]
+    }
+  ]
+}
