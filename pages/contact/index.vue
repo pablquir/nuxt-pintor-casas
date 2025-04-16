@@ -1,25 +1,30 @@
 <script setup>
+import fadeTransition from '~/helper/transitions/fade.ts'
+
+definePageMeta({ pageTransition: fadeTransition })
 </script>
 
 <template>
   <main class="bg-layout pt-40 py-20">
     <section class="h-screen">
-      <div class="mx-auto container text-default flex gap-3">
+      <div class="mx-auto container flex flex-col md:flex-row text-default flex gap-3">
         <div class="flex flex-col gap-4">
-          <h2 class="!text-3xl font-bold">Contacts</h2>
-          <div class="grid grid-cols-3 grid-rows-1">
-            <div>
+          <h2 class="!text-3xl font-bold">
+            <span class="px-2 bg-red-500 py-1 rounded-lg">Contacts</span>
+          </h2>
+          <div class="grid grid-cols-3 gap-4 grid-rows-1">
+            <div class="card">
               <h3>Direccion</h3>
               <p>Oficina:</p>
               <p>Avenida Bolivia Barrio Maritimo</p>
             </div>
-            <div>
+            <div class="card">
               <h3>Telefonos</h3>
               <p>(591) 75456896</p>
               <p>(591) 78892111</p>
               <p>(591) 69878566</p>
             </div>
-            <div>
+            <div class="card">
               <h3>Horarios</h3>
               <p>Lunes a viernes</p>
               <p>7:00 A.M - 20:00 PM</p>

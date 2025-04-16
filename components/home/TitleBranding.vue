@@ -3,10 +3,11 @@ import generateWhatsappLink from '~/helper/generateWhatsappLink'
 
 const props = defineProps({ dataTitle: Object });
 
-let brandingTitle = ref(null)
-let indexSubtitle = ref(0)
 
-let whatsappLink = ref('')
+let whatsappLink = ref("")
+let brandingRef = ref(null)
+
+let { fadeIn, textSlide } = useAnimations()
 
 let colorMode = useColorMode()
 
@@ -24,89 +25,48 @@ watch(colorMode, () => {
   })
 });
 
-let nextSubtitle = () => { indexSubtitle.value = (indexSubtitle.value + 1) % props.dataTitle.subTitles.length }
-
-function initTitle() {
-  const animateTitle = $gsap.timeline()
-  animateTitle.set('.branding-title', { x: '-100%', opacity: 0, color: currentColor.value })
-    .to('.branding-title', {
-      x: 0,
-      opacity: 1,
-      color: currentColor.value,
-      // stagger: { each: 0.1, from: 'start' },
-    })
-  animateTitle.to('.letter-text', {
-    color: '#ef4444',
-    stagger: {
-      each: 0.1,
-      from: 'start'
-    },
-  })
-    .to('.letter-text', {
-      color: currentColor.value,
-      stagger: {
-        each: 0.1,
-        from: 'start'
-      },
-      delay: -1.5
-    })
-}
-
-function initSubtitle() {
-  let animateSubTitle = $gsap.timeline()
-  animateSubTitle.set(".branding-subtitle", {
-    opacity: 0,
-    y: "-100%",
-  })
-    .to(".branding-subtitle", {
-      y: 0,
-      opacity: 1,
-      duration: 1,
-      onComplete: () => slideSubtitle()
-    })
-}
-
-function slideSubtitle() {
-  let animateSlideSubtitle = $gsap.timeline({ repeat: -1, onRepeat: () => nextSubtitle(), duration: 5 })
-  animateSlideSubtitle.to(".branding-subtitle", {
-    y: -100,
-    opacity: 0,
-    duration: 0.5,
-    ease: "power2.out"
-
-  })
-}
-
-function initBtnActions() {
-  let animateBtnActions = $gsap.timeline()
-  animateBtnActions.set(".btn-slide-fade", { opacity: 0, y: "100%" })
-    .to(".btn-slide-fade", {
-      opacity: 1,
-      y: 0,
-      ease: "none",
-      stagger: 0.1
-    })
-}
+let titleInitAnimation
+let subTitlesSlideAnimation
+let btnInitAnimation
 
 onMounted(() => {
   whatsappLink.value = generateWhatsappLink('59169157016 ', 'Hola, necesito un servicio')
-  initTitle()
-  initSubtitle()
-  initBtnActions()
+
+  let textEls = brandingRef.value.querySelectorAll('.branding-subtitle')
+  let brandingTitleEl = brandingRef.value.querySelector('.branding-title')
+  let btnEls = brandingRef.value.querySelectorAll('.btn-slide-fade')
+
+  //Animations gsap
+  titleInitAnimation = fadeIn(brandingTitleEl)
+  subTitlesSlideAnimation = textSlide(textEls, props.dataTitle.subTitles.length)
+  btnInitAnimation = fadeIn(btnEls, { opacity: 1, y: 0, stagger: 0.3 })
+})
+
+onUnmounted(() => {
+  titleInitAnimation.revert()
+  subTitlesSlideAnimation.revert()
+  btnInitAnimation.revert()
 })
 </script>
 
 <template>
-  <div class="branding-container">
+  <div class="branding-container" ref="brandingRef">
+    <!-- subtitles -->
+    <div class="relative h-8">
+      <div v-for="(subtitle, iSubtitle) in props.dataTitle.subTitles" :key="iSubtitle"
+        class="branding-subtitle -translate-y-20 absolute opacity-0">
+        {{ subtitle }}
+      </div>
+    </div>
 
-    <div class="branding-subtitle">{{ props.dataTitle.subTitles[indexSubtitle] }}</div>
-
+    <!-- title -->
     <div class="relative branding-title" ref="brandigTitle">
       <span v-for="(letter, iLetter) in props.dataTitle.title" :key="iLetter" :class="['letter-text']">
         {{ letter }}
       </span>
     </div>
 
+    <!-- buttons -->
     <div class="branding-actions">
       <NuxtLink :to="props.dataTitle.btnActions[0].href" :title="props.dataTitle.btnActions[0].title"
         class="col-span-2 btn btn-slide-fade">
@@ -163,7 +123,7 @@ onMounted(() => {
   @apply hover:bg-slate-100/90 dark:hover:bg-slate-800/90;
   @apply hover:font-bold md:text-xl;
   @apply flex justify-center items-center;
-  @apply opacity-0;
+  @apply opacity-0 translate-y-10;
 }
 
 .btn:nth-child(1) {

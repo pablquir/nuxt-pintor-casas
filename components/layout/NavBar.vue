@@ -2,16 +2,20 @@
 let { $gsap } = useNuxtApp()
 let navbarRef = ref(null)
 
+const { fadeIn } = useAnimations()
+
 onMounted(() => {
   //animate navabar elements
   let logoEl = navbarRef.value.querySelector(".logo-element")
   let menuDesktopEl = navbarRef.value.querySelector(".menu-element")
   let menuMobileEl = navbarRef.value.querySelector(".menu-mobile-element")
 
-  let navAnimate = $gsap.timeline({ duration: 0.3 })
-  navAnimate.to(logoEl, { opacity: 1 })
-  navAnimate.to(menuDesktopEl, { opacity: 1 })
-  navAnimate.to(menuMobileEl, { opacity: 1 })
+  let arryEl = [logoEl, menuDesktopEl, menuMobileEl]
+  fadeIn(arryEl, { stagger: 0.3 })
+})
+
+onUnmounted(() => {
+  fadeIn().revert()
 })
 
 </script>

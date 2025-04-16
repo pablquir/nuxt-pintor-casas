@@ -7,6 +7,6 @@
 
 <style scoped>
 .default-container {
-  @apply flex flex-col min-h-screen relative;
+  @apply flex flex-col min-h-screen relative bg-layout;
 }
 </style>

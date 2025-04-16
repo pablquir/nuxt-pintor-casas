@@ -1,12 +1,14 @@
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { ScrollToPlugin } from "gsap/ScrollToPlugin"
 
 export default defineNuxtPlugin(nuxtApp => {
-  gsap.registerPlugin(ScrollTrigger)
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
   return {
     provide: {
       gsap,
-      ScrollTrigger
+      ScrollTrigger,
+      ScrollToPlugin
     }
   }
 })

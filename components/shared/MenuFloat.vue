@@ -13,7 +13,7 @@ let toggleMenu = () => isShowMenu.value = !isShowMenu.value
       </slot>
     </button>
 
-    <Transition>
+    <Transition name="fade">
       <div v-show="isShowMenu" class="content-container">
         <slot name="content">Menu</slot>
       </div>
@@ -30,8 +30,8 @@ let toggleMenu = () => isShowMenu.value = !isShowMenu.value
 
 .content-container {
   @apply absolute;
-  @apply right-2 p-8 mt-2;
-  @apply bg-slate-100/90 dark:bg-slate-800/90 rounded-xl;
+  @apply right-2 p-8 mt-4;
+  @apply bg-slate-200/90 dark:bg-slate-900/90 rounded-xl;
   @apply backdrop-blur-md;
   @apply shadow shadow-slate-400 dark:shadow-slate-800;
 }

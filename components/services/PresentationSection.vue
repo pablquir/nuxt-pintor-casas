@@ -1,13 +1,29 @@
 <script setup lang="ts">
 const props = defineProps({ dataSection: Object });
 let readMore = ref(true)
+
+let presentationServicesRef = ref(null)
+
+let { fadeIn, scrollFade } = useAnimations()
+let animatePresentationCard
+
+onMounted(() => {
+  let cardEl = presentationServicesRef.value.querySelector('.card-container')
+
+  animatePresentationCard = scrollFade(cardEl, fadeIn(cardEl))
+})
+
+onUnmounted(() => {
+  animatePresentationCard.revert()
+})
+
 </script>
 
 <template>
-  <section class="section-container px-4">
-    <div class="card-container">
+  <section ref="presentationServicesRef" class="section-container px-4">
+    <div class="card-container opacity-0">
 
-      <div class="flex flex-col flex-1 p-8 text-center gap-4">
+      <div class="presentation-card ">
         <h1 class="font-bold text-3xl text-red-500">{{ dataSection.title }}</h1>
         <div class="text-left flex flex-col gap-4">
           <p v-for="(paragraph, iParagraph) in dataSection.content" :class="['itema', { 'line-clamp-3': readMore }]">
@@ -23,7 +39,7 @@ let readMore = ref(true)
       </div>
 
       <div class="flex-1">
-        <NuxtImg src="img/services/banner.png" height="500" class="float-right" />
+        <NuxtImg src="img/services/services-portada.webp" height="500" class="float-right" />
       </div>
     </div>
 
@@ -42,6 +58,10 @@ let readMore = ref(true)
   @apply flex flex-col-reverse md:flex-row justify-center items-center;
   @apply mx-auto container;
   @apply bg-card rounded-xl overflow-hidden;
+}
+
+.presentation-card {
+  @apply flex flex-col flex-1 p-8 text-center gap-4;
 }
 
 .div-mask {

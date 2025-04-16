@@ -1,58 +1,35 @@
 <script setup lang="ts">
 const props = defineProps({ dataSection: Object });
 
-const { $gsap } = useNuxtApp()
+let serviceAvailableRef = ref(null)
 
-onBeforeMount(() => {
-  // $gsap.set(".title-section", {
-  //   x: -400,
-  //   opacity: 0
-  // })
-  //
-  // $gsap.to('.title-section', {
-  //   x: 0,
-  //   opacity: 1,
-  //   scrollTrigger: {
-  //     trigger: 'h2',
-  //     start: "top center",
-  //     end: "top 25%",
-  //     scrub: true
-  //   }
-  // })
-  //
-  // $gsap.set(".card-service", {
-  //   x: 400,
-  //   y: 400,
-  //   opacity: 0
-  // })
-  //
-  // $gsap.to(".card-service", {
-  //   x: 0,
-  //   y: 0,
-  //   opacity: 1,
-  //   scrollTrigger: {
-  //     trigger: ".card-service",
-  //     start: "top center",
-  //     markers: true,
-  //     end: "top 25%",
-  //     scrub: true
-  //   }
-  //
-  // })
+let { scrollFade, fadeIn } = useAnimations()
+let animateTitle
+let animateCards
 
+onMounted(() => {
+  let titleEl = serviceAvailableRef.value.querySelector('.title-section')
+  let cardsEls = serviceAvailableRef.value.querySelectorAll('.service-card')
+
+  animateTitle = scrollFade(titleEl, fadeIn(titleEl, { y: 0 }))//tw css translate-y-10
+  animateCards = scrollFade(cardsEls, fadeIn(cardsEls, { y: 0, stagger: 0.3 }))
 })
 
-onMounted(() => { })
+onUnmounted(() => {
+  animateTitle.revert()
+  animateCards.revert()
+})
 </script>
 
 <template>
-  <section class="section-container py-32">
+  <section class="section-container py-32 zone-scroll" ref="serviceAvailableRef">
 
     <div class="mx-auto container justify-center flex flex-col gap-8">
-      <h2 class="title-section"> {{ props.dataSection.title }} </h2>
+      <h2 class="title-section opacity-0 translate-y-40"> {{ props.dataSection.title }} </h2>
 
       <div class="cards-container p-4">
-        <div v-for="(service, iService) in props.dataSection.content" :key="iService" class="card card-service">
+        <div v-for="(service, iService) in props.dataSection.content" :key="iService"
+          class="service-card opacity-0 translate-y-40">
           <h3 class="card-title">{{ service.title }}</h3>
           <Icon :name="'icon:' + service.icon" class="fill-default text-6xl" />
           <p>{{ service.paragraph }}</p>
@@ -85,8 +62,9 @@ onMounted(() => { })
   @apply text-default;
 }
 
-.card {
-  @apply flex flex-col gap-4;
+.service-card {
+  @apply card;
+  @apply flex flex-1 flex-col gap-4;
   @apply items-center shadow-md;
 }
 

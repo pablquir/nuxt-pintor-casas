@@ -1,9 +1,11 @@
 <script setup>
 import homeTexto from '~/pages/home/home_text.json'
+import fadeTransition from '~/helper/transitions/fade.ts'
+definePageMeta({ pageTransition: fadeTransition })
 </script>
 
 <template>
-  <main class="bg-layout">
+  <main>
     <HomePresentationSection :dataSection="homeTexto.sectionPresentation" />
     <HomeServicesAvailableSection :dataSection="homeTexto.sectionService" />
     <HomeHiringStepsSection :dataSection="homeTexto.sectionHiringSteps" />

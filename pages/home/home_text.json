@@ -1,24 +1,23 @@
 {
   "sectionPresentation": {
-    "imgSalpicadura": {
-      "urlDesktop": "img/home/pintura-salpicadura.png",
-      "urlMobile": "img/home/pintura-salpicadura-mobile.png",
-      "alt": "Pintura de varios colores salpicada"
+    "imgLog": {
+      "url": "/img/home/pintura-house.png",
+      "alt": "Imagen logo principal"
     },
     "imgSlides": [
       {
         "id": 1,
-        "url": "img/home/main-1.jpg",
+        "url": "img/home/main-1.webp",
         "alt": "Sala blanca sillas azules"
       },
       {
         "id": 2,
-        "url": "img/home/main-2.jpg",
+        "url": "img/home/main-2.webp",
         "alt": "Fachada blanca, puerta azul, protector de ventana azul"
       },
       {
         "id": 3,
-        "url": "img/home/main-3.jpg",
+        "url": "img/home/main-3.webp",
         "alt": "Fachada Amarilla, baranda y gradas negras"
       }
     ],
@@ -55,17 +54,17 @@
     "content": {
       "step1": {
         "title": "paso 1",
-        "img": "img/home/paso1-llamar.png",
+        "img": "img/home/paso1-llamar.webp",
         "text": "Contáctenos para solicitar un presupuesto o más información sobre nuestros servicios de pintura."
       },
       "step2": {
         "title": "paso 2",
-        "img": "img/home/paso2-detalles.png",
+        "img": "img/home/paso2-detalles.webp",
         "text": "Programaremos una visita al sitio para evaluar el trabajo y brindarle un presupuesto personalizado detallando el alcance del trabajo y los costos involucrados."
       },
       "step3": {
         "title": "paso 3",
-        "img": "img/home/paso3-revisar.png",
+        "img": "img/home/paso3-revisar.webp",
         "text": "Nuestro equipo altamente capacitado llevará a cabo el trabajo de pintura según lo acordado. Al finalizar, realizaremos una inspección final con usted para asegurarnos de que esté completamente satisfecho con el resultado."
       }
     }
@@ -137,41 +136,49 @@
     "comments": [
       {
         "id": 1,
+        "imgUrl": "img/home/foto-1.webp",
         "author": "Juan Ramiro C.",
         "content": "Alcides & Asociados hizo un trabajo increíble al pintar el exterior de mi casa. La atención al detalle fue impresionante y el resultado final superó mis expectativas."
       },
       {
         "id": 2,
+        "imgUrl": "img/home/foto-2.webp",
         "author": "Donato Mejia E.",
         "content": "Contraté a Alcides & Asociados para pintar el interior de mi restaurante y quedé impresionado por su profesionalismo y eficiencia. Completaron el trabajo antes de lo programado y la calidad de su trabajo fue excepcional."
       },
       {
         "id": 3,
+        "imgUrl": "img/home/foto-3.webp",
         "author": "Joselito Chavez",
         "content": "Recomiendo altamente a Alcides & Asociados por su excelente servicio al cliente. Desde la cotización inicial hasta el recorrido final, siempre fueron receptivos y atentos a mis necesidades y preocupaciones."
       },
       {
         "id": 4,
+        "imgUrl": "img/home/foto-4.webp",
         "author": "Ignacio Velez",
         "content": "Alcides & Asociados pintó las barandas y cercas alrededor de mi propiedad y la diferencia es increíble. Parecen nuevas y ahora están mejor protegidas contra los elementos."
       },
       {
         "id": 5,
+        "imgUrl": "img/home/foto-5.webp",
         "author": "Enrique R.",
         "content": "Me impresionó el nivel de experiencia y conocimiento que Alcides & Asociados aportó. Pudieron recomendar la mejor pintura y materiales para mis necesidades y presupuesto específicos."
       },
       {
         "id": 6,
+        "imgUrl": "img/home/foto-6.webp",
         "author": "Carmela G.",
         "content": "Alcides & Asociados es una empresa confiable y digna de confianza. Se presentaron a tiempo, trabajaron diligentemente durante todo el proyecto y cumplieron con todas sus promesas."
       },
       {
         "id": 7,
+        "imgUrl": "img/home/foto-7.webp",
         "author": "Ruben T.",
         "content": "El equipo de Alcides & Asociados es altamente capacitado y profesional. Pudieron completar un proyecto de pintura complejo de manera oportuna y eficiente, manteniendo al mismo tiempo un alto nivel de calidad."
       },
       {
         "id": 8,
+        "imgUrl": "img/home/foto-8.webp",
         "author": "Julio Mendoza",
         "content": "Al principio estaba indeciso de contratar una empresa de pintura, pero Alcides & Asociados eliminó todas mis preocupaciones. Se comunicaron clara y frecuentemente y se aseguraron de que estuviera contento con cada paso del proceso."
       }

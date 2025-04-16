@@ -1,18 +1,39 @@
 <script setup lang="ts">
 const props = defineProps({ dataSection: Object });
+
+let tabServicesRef = ref(null)
+
 const { currentService, setCurrentService } = useService()
+
+let { scrollFade, fadeIn } = useAnimations()
+let animateTabs
+let animateTabsCards
+
+onMounted(() => {
+  let tabEls = tabServicesRef.value.querySelectorAll('.tab')
+  let tabCardsEls = tabServicesRef.value.querySelectorAll('.tab-card')
+
+  animateTabs = scrollFade(tabEls, fadeIn(tabEls, { x: 0, stagger: .3 }))
+  animateTabsCards = scrollFade(tabCardsEls, fadeIn(tabCardsEls, { y: 0, stagger: .3 }))
+})
+
+onUnmounted(() => {
+  animateTabs.revert()
+  animateTabsCards.revert()
+})
 
 </script>
 
 <template>
-  <section class="relative bg-layout py-32 flex flex-col gap-4">
+  <section ref="tabServicesRef" class="relative bg-layout py-32 flex flex-col gap-4">
 
     <!-- tab buttons -->
     <div class="relative flex justify-center items-center mx-auto container gap-4 py-8">
-      <div class="flex gap-4 overflow-x-auto px-4 py-2">
+      <div class="tab-container">
 
         <button v-for="(tab, iTab) in dataSection" :key="iTab"
-          :class="[iTab == currentService ? 'btn-tab-active' : '', 'btn-tab']" @click="setCurrentService(iTab)">
+          :class="[iTab == currentService ? 'tab-active' : '', 'tab translate-x-40 opacity-0']"
+          @click="setCurrentService(iTab)">
           <Icon :name="'icon:' + tab.icon"
             :class="[iTab == currentService ? '!fill-slate-100' : '', 'text-4xl fill-default']" />
           {{ tab.name }}
@@ -24,7 +45,8 @@ const { currentService, setCurrentService } = useService()
     <!-- tab content -->
     <div class="relative mx-auto container gap-4 text-default flex flex-col">
 
-      <div v-for="(service, iService) in dataSection" :key="iService" class="px-4 rounded-xl flex flex-col gap-4"
+      <Transition name="fade"></Transition>
+      <div v-for="(service, iService) in dataSection" :key="iService" class="tab-card opacity-0 translate-y-40"
         v-show="iService == currentService">
 
         <div class="flex flex-col md:flex-row gap-4 card col-span-2">
@@ -95,11 +117,19 @@ const { currentService, setCurrentService } = useService()
   @apply flex-col;
 }
 
-.btn-tab {
+.tab {
   @apply p-4 bg-slate-100 dark:bg-slate-800 rounded-xl flex justify-center items-center gap-4 text-color-default;
 }
 
-.btn-tab-active {
+.tab-active {
   @apply !bg-red-500 text-slate-100 scale-110 font-bold;
+}
+
+.tab-container {
+  @apply flex justify-start md:justify-center gap-4 overflow-x-auto px-4 py-2 w-full;
+}
+
+.tab-card {
+  @apply px-4 rounded-xl flex flex-col gap-4;
 }
 </style>

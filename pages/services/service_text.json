@@ -43,7 +43,7 @@
         {
           "title": "Especificaciones",
           "icon": "list-check-solid",
-          "img": "/img/services/especificaciones.png",
+          "img": "/img/services/especificaciones.webp",
           "paragraphs": [
             "Utilizamos pintura de alta calidad para exteriores que es resistente a la intemperie y a la decoloración.",
             "Ofrecemos una amplia gama de colores para que nuestros clientes puedan elegir el que mejor se adapte a sus necesidades.",
@@ -53,7 +53,7 @@
         {
           "title": "Cuidados",
           "icon": "triangle-exclamation-solid",
-          "img": "/img/services/advertencias.png",
+          "img": "/img/services/advertencias.webp",
           "paragraphs": [
             "Evite el uso de limpiadores abrasivos o cepillos de cerdas duras para evitar dañar la pintura.",
             "Asegúrese de mantener las áreas pintadas limpias y libres de escombros y suciedad.",
@@ -63,7 +63,7 @@
         {
           "title": "Procedimientos",
           "icon": "screwdriver-wrench-solid",
-          "img": "img/services/procedimientos.png",
+          "img": "img/services/procedimientos.webp",
           "paragraphs": [
             "Preparación: cubrimos todas las áreas y objetos cercanos para evitar manchas accidentales. También lavamos la superficie a pintar y aplicamos sellador si es necesario.",
             "Pintura: aplicamos una capa de imprimación y luego la pintura exterior utilizando técnicas de pintura adecuadas para garantizar una cobertura uniforme.",
@@ -102,7 +102,7 @@
         {
           "title": "Especificaciones",
           "icon": "list-check-solid",
-          "img": "/img/services/especificaciones-interior.png",
+          "img": "/img/services/especificaciones-interior.webp",
           "paragraphs": [
             "Utilizamos pintura de alta calidad para interiores que es resistente al desgaste y fácil de limpiar.",
             "Ofrecemos una amplia gama de colores para que nuestros clientes puedan elegir el que mejor se adapte a sus necesidades.",
@@ -112,7 +112,7 @@
         {
           "title": "Cuidados",
           "icon": "triangle-exclamation-solid",
-          "img": "/img/services/advertencias.png",
+          "img": "/img/services/advertencias.webp",
           "paragraphs": [
             "Evite el uso de limpiadores abrasivos o cepillos de cerdas duras para evitar dañar la pintura.",
             "Asegúrese de mantener las áreas pintadas limpias y libres de escombros y suciedad.",
@@ -122,7 +122,7 @@
         {
           "title": "Procedimientos",
           "icon": "screwdriver-wrench-solid",
-          "img": "/img/services/procedimientos-interior.png",
+          "img": "/img/services/procedimientos-interior.webp",
           "paragraphs": [
             "Preparación: cubrimos todas las áreas y objetos cercanos para evitar manchas accidentales. También llenamos cualquier grieta o agujero y lijamos la superficie a pintar para que esté suave.",
             "Pintura: aplicamos una capa de imprimación y luego la pintura interior utilizando técnicas de pintura adecuadas para garantizar una cobertura uniforme.",
@@ -161,7 +161,7 @@
         {
           "title": "Especificaciones",
           "icon": "list-check-solid",
-          "img": "/img/services/especificaciones-reja.png",
+          "img": "/img/services/especificaciones-reja.webp",
           "paragraphs": [
             "Utilizamos pintura de alta calidad que es resistente a la intemperie y a la decoloración.",
             "Ofrecemos una amplia gama de colores para que nuestros clientes puedan elegir el que mejor se adapte a sus necesidades.",
@@ -171,7 +171,7 @@
         {
           "title": "Cuidados",
           "icon": "triangle-exclamation-solid",
-          "img": "/img/services/advertencias.png",
+          "img": "/img/services/advertencias.webp",
           "paragraphs": [
             "Evite el uso de limpiadores abrasivos o cepillos de cerdas duras para evitar dañar la pintura.",
             "Inspeccione periódicamente la reja para detectar cualquier signo de oxidación y repinte cuando sea necesario.",
@@ -181,7 +181,7 @@
         {
           "title": "Procedimientos",
           "icon": "screwdriver-wrench-solid",
-          "img": "/img/services/procedimientos-reja.png",
+          "img": "/img/services/procedimientos-reja.webp",
           "paragraphs": [
             "Preparación: cubrimos todas las áreas cercanas para evitar manchas accidentales. También limpiamos y lijamos la superficie de la reja para eliminar cualquier óxido o irregularidad.",
             "Pintura: aplicamos una capa de imprimación y luego la pintura utilizando técnicas de pintura adecuadas para garantizar una cobertura uniforme.",
@@ -220,7 +220,7 @@
         {
           "title": "Especificaciones",
           "icon": "list-check-solid",
-          "img": "/img/services/especificaciones-baranda.png",
+          "img": "/img/services/especificaciones-baranda.webp",
           "paragraphs": [
             "Utilizamos pintura de alta calidad que es resistente a la intemperie y a la decoloración.",
             "Ofrecemos una amplia gama de colores para que nuestros clientes puedan elegir el que mejor se adapte a sus necesidades.",
@@ -230,7 +230,7 @@
         {
           "title": "Cuidados",
           "icon": "triangle-exclamation-solid",
-          "img": "/img/services/advertencias.png",
+          "img": "/img/services/advertencias.webp",
           "paragraphs": [
             "Evite el uso de limpiadores abrasivos o cepillos de cerdas duras para evitar dañar la pintura.",
             "Inspeccione periódicamente la baranda para detectar cualquier signo de oxidación y repinte cuando sea necesario.",
@@ -240,7 +240,7 @@
         {
           "title": "Procedimientos",
           "icon": "screwdriver-wrench-solid",
-          "img": "/img/services/procedimientos-baranda.png",
+          "img": "/img/services/procedimientos-baranda.webp",
           "paragraphs": [
             "Preparación: cubrimos todas las áreas cercanas para evitar manchas accidentales. También limpiamos y lijamos la superficie de la baranda para eliminar cualquier óxido o irregularidad.",
             "Pintura: aplicamos una capa de imprimación y luego la pintura utilizando técnicas de pintura adecuadas para garantizar una cobertura uniforme.",

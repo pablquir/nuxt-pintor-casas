@@ -1,12 +1,7 @@
 <script setup lang="ts">
 const props = defineProps({ dataSection: Object })
-let { $gsap } = useNuxtApp()
-let homePresentationRef = ref()
 
-let dataSlides = {
-  imgSalpicadura: props.dataSection.imgSalpicadura,
-  imgSlides: props.dataSection.imgSlides
-}
+let homePresentationRef = ref()
 
 let dataTitle = {
   title: props.dataSection.title,
@@ -15,27 +10,38 @@ let dataTitle = {
   btnActions: props.dataSection.btnActions
 }
 
-onMounted(() => {
-  let logoPintura = homePresentationRef.value.querySelector(".logo-pintura")
+let { fadeIn } = useAnimations()
+let fadeAnimate
 
-  let logoPinturaAnimate = $gsap.timeline({ duration: 0.3 })
-  logoPinturaAnimate.to(logoPintura, { opacity: 1 })
+onMounted(() => {
+  let logoPintura = homePresentationRef.value.querySelector(".logo-img")
+  fadeAnimate = fadeIn(logoPintura)
+})
+
+onUnmounted(() => {
+  fadeAnimate.revert()
 })
 </script>
 
 <template>
   <section class="section-container snap-start" ref="homePresentationRef">
 
-    <HomeSlider :dataSlides="dataSlides" />
+    <!-- image background effect slides -->
+    <HomeSlider :dataSlides="props.dataSection.imgSlides" />
 
-    <!-- <HomeTitleBranding :dataTitle="dataTitle" class="md:left-20 top-[50%] md:top-auto" /> -->
-    <div class="absolute top-0 left-0 w-full h-full flex">
-      <div class="flex-1 flex justify-center items-center">
-        <HomeTitleBranding :dataTitle="dataTitle" class="" />
+    <div class="presentation-container">
+
+      <!-- title -->
+      <div class="title-presentation-container">
+        <HomeTitleBranding :dataTitle="dataTitle" />
       </div>
-      <div class="flex-1 flex justify-center items-center p-8 relative">
-        <NuxtPicture src="/img/home/pintura-house.png" class="opacity-0 logo-pintura  w-[600px]" />
+
+      <!-- logo -->
+      <div class="logo-container">
+        <NuxtPicture :src="props.dataSection.imgLog.url" :alt="props.dataSection.imgLog.alt"
+          :imgAttrs="{ class: 'logo-img opacity-0' }" />
       </div>
+
     </div>
 
   </section>
@@ -43,6 +49,29 @@ onMounted(() => {
 
 <style scoped>
 .section-container {
-  @apply relative flex justify-center items-center w-full min-h-screen;
+  @apply relative flex justify-center items-center w-full min-h-dvh md:min-h-screen;
+}
+
+.presentation-container {
+  @apply absolute w-full h-full;
+  @apply top-0 left-0;
+  @apply flex flex-col-reverse md:flex-row;
+}
+
+.title-presentation-container {
+  @apply flex-1 flex;
+  @apply justify-center items-start md:items-center;
+  @apply px-8;
+}
+
+.logo-container {
+  @apply flex-1 flex relative;
+  @apply justify-center items-end md:items-center;
+  @apply p-8;
+}
+
+.logo-img {
+  @apply flex justify-center items-center;
+  @apply object-cover w-full;
 }
 </style>
