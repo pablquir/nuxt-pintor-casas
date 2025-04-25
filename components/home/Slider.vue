@@ -21,18 +21,25 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="slider-container py-20" ref="sliderRef">
+  <div class="slider-container w-full h-dvh overflow-hidden py-20" ref="sliderRef">
     <NuxtPicture v-for="(slide, index) in props.dataSlides" :key="index" :src="slide.url"
       :imgAttrs="{ class: 'absolute w-full h-full object-cover opacity-0 slide-img' }" :alt="slide.alt" loading="lazy"
       placeholder />
     <div class="slider-overlay"></div>
-    <SharedOrnament class="bg-red-500" />
+    <!-- <SharedOrnament class="bg-red-500" /> -->
   </div>
 </template>
 
 <style scoped>
 .slider-container {
-  @apply relative w-full h-screen overflow-hidden;
+  @apply relative;
+  mask-image: url("/img/home/mask-first.svg");
+  -webkit-mask-image: url("/img/home/mask-first.svg");
+  mask-repeat: repeat-x;
+  -webkit-mask-repeat: repeat-x;
+  mask-size: fill-box;
+  -webkit-mask-size: fill-box;
+  mask-position: bottom;
 }
 
 .slider-overlay {

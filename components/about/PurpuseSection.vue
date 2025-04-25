@@ -38,7 +38,7 @@ onUnmounted(() => {
   @apply relative;
   @apply min-h-screen w-full py-32;
   @apply flex justify-center items-center snap-start;
-  @apply text-default bg-red-500;
+  @apply text-default;
 }
 
 .card-purpuse {

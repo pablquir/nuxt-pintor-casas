@@ -22,23 +22,26 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="section-container py-32 zone-scroll" ref="serviceAvailableRef">
+  <section class="section-container py-32" ref="serviceAvailableRef">
 
-    <div class="mx-auto container justify-center flex flex-col gap-8">
+    <div class="section-body">
       <h2 class="title-section opacity-0 translate-y-40"> {{ props.dataSection.title }} </h2>
 
-      <div class="cards-container p-4">
+      <div class="cards-container">
         <div v-for="(service, iService) in props.dataSection.content" :key="iService"
           class="service-card opacity-0 translate-y-40">
           <h3 class="card-title">{{ service.title }}</h3>
           <Icon :name="'icon:' + service.icon" class="fill-default text-6xl" />
           <p>{{ service.paragraph }}</p>
-          <NuxtLink to="/services" class="btn bg-red-500 !text-slate-100 px-4 py-2">Ver mas</NuxtLink>
+          <NuxtLink to="/services" class="btn">
+            Ver mas
+          </NuxtLink>
         </div>
       </div>
+
     </div>
 
-    <div class="div-mask bg-layout absolute bottom-0 rotate-180 left-0 w-full h-40"> </div>
+    <div class="div-mask bg-layout absolute bottom-0 rotate-180 left-0 w-full h-40" />
 
   </section>
 </template>
@@ -46,10 +49,14 @@ onUnmounted(() => {
 <style scoped>
 .section-container {
   @apply min-h-screen relative;
-  @apply flex flex-col gap-8;
+  @apply flex flex-col;
   @apply justify-center items-center;
-  @apply bg-red-500;
   @apply snap-start;
+}
+
+.section-body {
+  @apply mx-auto container justify-center;
+  @apply flex flex-col gap-8 px-8;
 }
 
 .title-section {
@@ -83,5 +90,10 @@ onUnmounted(() => {
   mask-image: url("/img/home/path33.svg");
   mask-repeat: repeat-x, no-repeat;
   mask-size: fill-box;
+}
+
+.btn {
+  @apply bg-red-500 !text-slate-100 px-4 py-2;
+  @apply hover:bg-red-400;
 }
 </style>

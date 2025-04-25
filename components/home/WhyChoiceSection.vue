@@ -25,7 +25,9 @@ onUnmounted(() => {
 <template>
   <section ref="whyChoiceRef" class="section-container">
 
-    <div class="mx-auto container flex flex-col gap-8">
+    <SharedBgWaveWithMask />
+
+    <div class="mx-auto container flex flex-col gap-8 py-32">
       <h2 class="title-section opacity-0 translate-y-40"> {{ props.dataSection.title }} </h2>
 
       <div class="cards-container">
@@ -44,14 +46,12 @@ onUnmounted(() => {
       </div>
 
     </div>
-
-    <div class="div-mask bg-red-500 absolute bottom-0 rotate-180 left-0 w-full h-40"> </div>
   </section>
 </template>
 
 <style scoped>
 .section-container {
-  @apply flex flex-col py-32;
+  @apply flex flex-col;
   @apply relative snap-start px-4 min-h-screen justify-center items-center text-default;
 }
 

@@ -9,6 +9,6 @@ definePageMeta({ pageTransition: fadeTransition })
   <main class="">
     <AboutPresentationSection :dataSection="aboutTexto.sectionPresentation" />
     <AboutPurpuseSection :dataSection="aboutTexto.sectionPurpose" />
-    <SharedFootSection />
+    <SharedFootSection class="bg-layout" />
   </main>
 </template>

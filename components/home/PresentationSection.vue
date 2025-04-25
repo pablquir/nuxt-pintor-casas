@@ -41,7 +41,6 @@ onUnmounted(() => {
         <NuxtPicture :src="props.dataSection.imgLog.url" :alt="props.dataSection.imgLog.alt"
           :imgAttrs="{ class: 'logo-img opacity-0' }" />
       </div>
-
     </div>
 
   </section>

@@ -50,7 +50,7 @@ onUnmounted(() => {
 <style scoped>
 /* .itema:nth-child(3) { @apply row-span-2; } */
 .section-container {
-  @apply relative bg-red-500 py-32;
+  @apply relative py-32;
 }
 
 .card-container {

@@ -38,16 +38,16 @@ onUnmounted(() => {
 <template>
   <main class="min-h-dvh">
 
-    <section class="relative pt-40 pb-20 flex flex-col gap-8 h-full">
+    <section class="relative flex flex-col gap-8 min-h-screen py-32">
+      <div class="div-mask bg-layout absolute bottom-0 rotate-180 left-0 w-full h-40"> </div>
 
       <div class="relative bg-card mx-auto container rounded-xl flex flex-col md:flex-row max-h-full px-4">
         <PricesFormPrice />
         <PricesViewerImg />
       </div>
 
-      <SharedOrnament class="bg-red-500" />
     </section>
 
-    <SharedFootSection class="bg-red-500" />
+    <SharedFootSection class="bg-layout" />
   </main>
 </template>

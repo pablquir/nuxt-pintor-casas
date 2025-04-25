@@ -54,18 +54,21 @@
     "content": {
       "step1": {
         "title": "paso 1",
+        "bgImg": "img/home/number1.svg",
         "img": "img/home/paso1-llamar.webp",
         "text": "Contáctenos para solicitar un presupuesto o más información sobre nuestros servicios de pintura."
       },
       "step2": {
         "title": "paso 2",
+        "bgImg": "img/home/number2.svg",
         "img": "img/home/paso2-detalles.webp",
         "text": "Programaremos una visita al sitio para evaluar el trabajo y brindarle un presupuesto personalizado detallando el alcance del trabajo y los costos involucrados."
       },
       "step3": {
         "title": "paso 3",
+        "bgImg": "img/home/number3.svg",
         "img": "img/home/paso3-revisar.webp",
-        "text": "Nuestro equipo altamente capacitado llevará a cabo el trabajo de pintura según lo acordado. Al finalizar, realizaremos una inspección final con usted para asegurarnos de que esté completamente satisfecho con el resultado."
+        "text": "Nuestro equipo altamente capacitado hará el trabajo de pintura según lo acordado. Al finalizar, realizaremos una inspección final con usted para asegurarnos de que esté completamente satisfecho con el resultado."
       }
     }
   },
@@ -76,28 +79,28 @@
         "name": "exterior",
         "icon": "paint-roller-solid",
         "title": "Pintado de exteriores",
-        "paragraph": "¿Busca darle una nueva vida a la fachada de su hogar? ",
+        "paragraph": "¿Busca renovar la fachada de su hogar? Realzamos la apariencia exterior con acabados duraderos y de calidad profesional.",
         "href": "#serviceExterior"
       },
       {
         "name": "interior",
         "icon": "brush-solid",
         "title": "Pintado de interiores",
-        "paragraph": "¿Necesita darle una nueva apariencia a su hogar por dentro?",
+        "paragraph": "¿Desea transformar los espacios interiores de su casa? Brindamos color, estilo y calidez a cada ambiente.",
         "href": "#serviceInterior"
       },
       {
         "name": "railing",
         "icon": "stairs-solid",
         "title": "Pintado de barandas",
-        "paragraph": "Las barandas son una parte importante de su hogar que no deben ser descuidadas.",
+        "paragraph": "Las barandas son clave en el estilo del hogar. Las pintamos con precisión y productos resistentes al desgaste.",
         "href": "#serviceRailing"
       },
       {
         "name": "fence",
         "icon": "reja-solid",
         "title": "Pintado de rejas",
-        "paragraph": "Las rejas pueden agregar un toque de seguridad y estilo a su hogar, pero si están en mal estado pueden ser un verdadero ojo de dolor.",
+        "paragraph": "Las rejas bien pintadas protegen y embellecen. Aplicamos técnicas y materiales que garantizan un acabado perfecto y duradero.",
         "href": "#serviceFence"
       }
     ]

@@ -54,3 +54,34 @@ html {
   mask-repeat: repeat-x, no-repeat;
   mask-size: fill-box;
 }
+
+/* aspect scroll */
+::-webkit-scrollbar {
+  width: 8px;
+  /* vertical */
+  height: 8px;
+  /* horizontal */
+}
+
+/* Fondo de la barra (track) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Parte desplazable (thumb) */
+::-webkit-scrollbar-thumb {
+  background: #888888;
+  border-radius: 8px;
+}
+
+/* Hover en el thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* Opcional: para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888888 #f1f1f1;
+}
+
